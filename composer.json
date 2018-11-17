@@ -1,0 +1,12 @@
+{
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "config": {
+        "fix-asset": {
+            "installer-paths": {
+                "bower-asset-library": "vendor/bower"
+            }
+        }
+    }
+}

@@ -1,5 +1,10 @@
 <?php
-/**
- * Date: 18.11.2018
- */
-echo '<h1>Testing Yii2</h1>';
+
+define('YII_DEBUG',true);
+
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
+$config = require_once __DIR__ . '/../config/web.php';
+
+(new yii\web\Application($config))->run();
+
